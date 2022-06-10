@@ -37,6 +37,9 @@ NUM_THREADS=8
 JAVA_OPTS="-Xms512M -Xmx16G -XX:+UseParallelGC -XX:ParallelGCThreads=${NUM_THREADS}"
 
 # split the panel15_pro target regions to roughly equal-size 4 chunks
+# it's also possible to use gatk SplitIntervals for splitting
+#https://gatk.broadinstitute.org/hc/en-us/articles/5358914364699-SplitIntervals
+
 #GRP_1='-XL chr1 -XL chr2 -XL chr3 -XL chr4'
 #GRP_2='-XL chr5 -XL chr6 -XL chr7 -XL chr8 -XL chr9'
 #GRP_3='-XL chr10 -XL chr11 -XL chr12 -XL chr13 -XL chr14 -XL chr15 -XL chr16'
